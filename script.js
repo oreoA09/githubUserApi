@@ -12,7 +12,7 @@ function displayRepos(responseJson) {
 	$("#results").html("")//clears the results div
 	responseJson.forEach(item => {//loops thru the arr
 		$("#results").append(`
-    <div class="resultsrow"><h2><a href="${item.html_url}" target="_blank">${item.full_name}</a></h2> <p>Forks: ${item.forks}</p></div>
+    <div class="resultsrow p-4"><h3><a href="${item.html_url}">${item.full_name}</a></h3> <h6>Forks: ${item.forks}</h6></div>
     `)//appends image to results div
 	})
 }
